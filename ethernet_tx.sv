@@ -3,7 +3,7 @@
 // Module: ethernet_tx
 //       Encapsulates RTP packets into Ethernet frames
 
-module ehternet_tx(
+module ehternet_tx #(
   parameter RTP_WIDTH
 )
   (
@@ -24,6 +24,7 @@ module ehternet_tx(
         eth_tx_valid <= 1; 
       end 
     end 
-endmodule 
+   end
+endmodule
         
   
