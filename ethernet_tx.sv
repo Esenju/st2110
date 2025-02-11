@@ -1,3 +1,7 @@
+// Peter Mbua
+// ST2110 SDI-to-IP converter
+// Module: ethernet_tx
+//       Encapsulates RTP packets into Ethernet frames
 
 module ehternet_tx(
   parameter RTP_WIDTH
