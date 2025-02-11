@@ -1,3 +1,8 @@
+// Peter Mbua
+// ST2110 SDI-to-IP converter
+// Module: sdi_rx
+//       Captures SDI serial data, extracts video/audio, and outputs parallel data
+
 module sdi_rx( 
   parameter VIDEO_WIDTH
   ,parameter AUDIO_WIDTH
