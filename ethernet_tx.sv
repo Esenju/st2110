@@ -3,15 +3,14 @@
 // Module: ethernet_tx
 //       Encapsulates RTP packets into Ethernet frames
 
-module ehternet_tx #(
-  parameter RTP_WIDTH
+module ethernet_tx #(
+  parameter RTP_WIDTH = 32
 )
   (
-    input logic                   clk, rst_n,
+    input logic                   clk, rst_n
     ,input logic [RTP_WIDTH-1:0]  rtp_data
     ,input logic                  rtp_valid 
-    ,input logic                  rtp_valid 
-    ,output logic [RTP_WIDTH-1:0] eth_tx_data,   // Ethernet Output 
+    ,output logic [RTP_WIDTH-1:0] eth_tx_data    // Ethernet Output 
     ,output logic                 eth_tx_valid   // Ethernet TX valid 
   );
 
@@ -25,6 +24,6 @@ module ehternet_tx #(
       end 
     end 
    end
-endmodule
+endmodule 
         
   
