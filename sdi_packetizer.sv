@@ -3,7 +3,7 @@
 // Module: sdi_packetizer
 //       Encapsulates video and audio into RTP packets
 
-module sdi_packetizer(
+module sdi_packetizer #(
   parameter VIDEO_WIDTH
   ,parameter AUDIO_WIDTH
 )
@@ -28,3 +28,4 @@ module sdi_packetizer(
         end 
   end 
 endmodule 
+
