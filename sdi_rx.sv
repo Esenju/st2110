@@ -3,7 +3,8 @@
 // Module: sdi_rx
 //       Captures SDI serial data, extracts video/audio, and outputs parallel data
 
-module sdi_rx( 
+
+module sdi_rx #( 
   parameter VIDEO_WIDTH
   ,parameter AUDIO_WIDTH
 )
@@ -11,7 +12,7 @@ module sdi_rx(
    ,input logic sdi_in                        // SDI serial input
    ,input logic [VIDEO_WIDTH-1] video_data 
    ,input logic [AUDIO_WIDTH-1] audio_data
-   ,output logic v_sync,                      // Video sync signal
+   ,output logic v_sync                      // Video sync signal
    ,output logic a_valid                      // Audio valid signal
   );
 
