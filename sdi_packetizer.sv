@@ -4,8 +4,8 @@
 //       Encapsulates video and audio into RTP packets
 
 module sdi_packetizer #(
-  parameter VIDEO_WIDTH
-  ,parameter AUDIO_WIDTH
+  parameter VIDEO_WIDTH = 10
+  ,parameter AUDIO_WIDTH = 16
 )
   (
   input logic clk, rst_n
@@ -28,4 +28,3 @@ module sdi_packetizer #(
         end 
   end 
 endmodule 
-
